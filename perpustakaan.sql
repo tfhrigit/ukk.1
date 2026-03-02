@@ -70,7 +70,7 @@ INSERT INTO `anggota` (`id_anggota`, `nis`, `nama_anggota`, `username`, `passwor
 --
 
 CREATE TABLE `buku` (
-  `id_buku` int(11) NOT NULL,
+  `id_buku` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `judul_buku` varchar(100) NOT NULL,
   `pengarang` varchar(100) NOT NULL,
   `penerbit` varchar(100) NOT NULL,

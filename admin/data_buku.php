@@ -22,7 +22,7 @@
             <?php  
             include '../koneksi.php';
             $no = 1;
-            $query = "SELECT * FROM buku ORDER BY id_buku DESC";
+            $query = "SELECT * FROM buku ORDER BY id_buku ASC";
             $data = mysqli_query($koneksi, $query);
 
             foreach ($data as $buku) {
