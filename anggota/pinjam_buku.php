@@ -1,11 +1,17 @@
 <?php  
 include '../koneksi.php';
 
-if (isset($_GET['id_buku'])) {
-    $id_buku = $_GET['id_buku'];
+if (isset($_POST['id_buku']) || isset($_GET['id_buku'])) {
+    $id_buku = isset($_POST['id_buku']) ? $_POST['id_buku'] : $_GET['id_buku'];
     $id_anggota = $_SESSION['id_anggota'];
     $tgl_pinjam = date('Y-m-d');
-    $tgl_kembali = date('Y-m-d', strtotime('+5 days'));
+    
+    // Gunakan tanggal kembali dari form jika tersedia, jika tidak default ke +7 hari
+    if (isset($_POST['tgl_kembali'])) {
+        $tgl_kembali = $_POST['tgl_kembali'];
+    } else {
+        $tgl_kembali = date('Y-m-d', strtotime('+7 days'));
+    }
 
     $cek_buku = mysqli_query($koneksi, "SELECT status FROM buku WHERE id_buku = '$id_buku'");
     $b = mysqli_fetch_array($cek_buku);
@@ -16,7 +22,6 @@ if (isset($_GET['id_buku'])) {
         $simpan = mysqli_query($koneksi, $query);
 
         if ($simpan) {
-
             mysqli_query($koneksi, "UPDATE buku SET status='Tidak' WHERE id_buku='$id_buku'");
 
             echo "<script>

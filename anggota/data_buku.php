@@ -47,7 +47,7 @@
                 </td>
                 <td class="text-center">
                     <?php if($buku['status'] == 'Tersedia'): ?>
-                        <a href="?halaman=pinjam_buku&id_buku=<?= $buku['id_buku']; ?>" class="btn btn-success btn-sm rounded-3 px-3 fw-bold" onclick="return confirm('Ingin meminjam buku ini?')">
+                        <a href="?halaman=form_pinjam&id_buku=<?= $buku['id_buku']; ?>" class="btn btn-success btn-sm rounded-3 px-3 fw-bold">
                             <i class="bi bi-bag-plus-fill me-1"></i> Pinjam
                         </a>
                     <?php else: ?>
