@@ -9,7 +9,7 @@ if (empty($_SESSION['id_anggota'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Member Dashboard | Perpustakaan Digital</title>
+    <title>Member Dashboard | Perpustakaan</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <style>
