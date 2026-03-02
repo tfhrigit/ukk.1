@@ -27,7 +27,7 @@ if (isset($_POST['daftar'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daftar Anggota | Perpustakaan Sekolah Digital</title>
+    <title>Daftar Anggota | Perpustakaan Smk Karya Bhakti Brebes</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <style>
@@ -49,7 +49,7 @@ if (isset($_POST['daftar'])) {
                 <div class="text-center mb-4">
                     <img src="asset/img/logo-smk.png" alt="Logo SMK" class="logo-img">
                     <h4 class="fw-bold text-dark">Pendaftaran Anggota</h4>
-                    <p class="text-muted small">Buat akun untuk mengakses koleksi digital</p>
+                    <p class="text-muted small">Buat akun untuk mengakses buku digital</p>
                 </div>
 
                 <form method="post">

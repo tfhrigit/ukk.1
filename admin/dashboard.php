@@ -146,7 +146,7 @@ if (empty($_SESSION['id_admin'])) {
         <div class="sidebar-header">
             <img src="../asset/img/logo-smk.png" alt="Logo">
             <h6 class="fw-bold mb-0">Admin Panel</h6>
-            <small class="text-muted">Perpustakaan Digital</small>
+            <small class="text-muted">Perpustakaan Smk Karya Bhakti Brebes</small>
         </div>
         
         <ul class="nav-menu">

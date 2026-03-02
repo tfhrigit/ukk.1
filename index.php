@@ -70,8 +70,8 @@
     <div class="card main-card p-4 p-md-5">
         <div class="text-center mb-5">
             <img src="asset/img/logo-smk.png" alt="Logo SMK" class="logo-img">
-            <h2 class="welcome-title">Perpustakaan Sekolah Digital</h2>
-            <p class="text-muted">Akses Literasi Digital Smk Karya Bhakti Brebes</p>
+            <h2 class="welcome-title">Perpustakaan Smk Karya Bhakti Brebes</h2>
+            <p class="text-muted">Akses Buku Smk Karya Bhakti Brebes</p>
         </div>
 
         <div class="row g-4">

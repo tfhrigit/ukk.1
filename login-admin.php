@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Admin | Perpustakaan Sekolah Digital</title>
+    <title>Login Admin | Perpustakaan Smk Karya Bhakti Brebes</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <style>
@@ -26,7 +26,7 @@
                 <div class="text-center mb-4">
                     <img src="asset/img/logo-smk.png" alt="Logo SMK" class="logo-img">
                     <h4 class="fw-bold text-dark">Login Admin</h4>
-                    <p class="text-muted small">Kelola data perpustakaan digital</p>
+                    <p class="text-muted small">Kelola data buku perpustakaan</p>
                 </div>
 
                 <form method="post">

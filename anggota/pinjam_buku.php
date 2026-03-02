@@ -6,7 +6,6 @@ if (isset($_POST['id_buku']) || isset($_GET['id_buku'])) {
     $id_anggota = $_SESSION['id_anggota'];
     $tgl_pinjam = date('Y-m-d');
     
-    // Gunakan tanggal kembali dari form jika tersedia, jika tidak default ke +7 hari
     if (isset($_POST['tgl_kembali'])) {
         $tgl_kembali = $_POST['tgl_kembali'];
     } else {

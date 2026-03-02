@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h5 class="fw-bold mb-0">
-        <i class="bi bi-book text-success me-2"></i> Koleksi Buku Perpustakaan
+        <i class="bi bi-book text-success me-2"></i> Koleksi Buku
     </h5>
 </div>
 

@@ -13,7 +13,7 @@
                     <div class="mb-3">
                         <label class="form-label fw-semibold">Pilih Anggota</label>
                         <select name="id_anggota" class="form-select" required>
-                            <option value="">-- Pilih Anggota --</option>
+                            <option value="">Pilih Anggota</option>
                             <?php 
                             $anggota = mysqli_query($koneksi, "SELECT * FROM anggota ORDER BY nama_anggota ASC");
                             while($a = mysqli_fetch_array($anggota)): ?>
@@ -25,7 +25,7 @@
                     <div class="mb-3">
                         <label class="form-label fw-semibold">Pilih Buku</label>
                         <select name="id_buku" class="form-select" required>
-                            <option value="">-- Pilih Buku (Tersedia) --</option>
+                            <option value="">Pilih Buku (Tersedia)</option>
                             <?php 
                             $buku = mysqli_query($koneksi, "SELECT * FROM buku WHERE status='Tersedia' ORDER BY judul_buku ASC");
                             while($b = mysqli_fetch_array($buku)): ?>
