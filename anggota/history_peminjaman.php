@@ -13,7 +13,7 @@
                 <th class="border-0 pb-3 text-center">Tgl Pinjam</th>
                 <th class="border-0 pb-3 text-center">Batas Kembali</th>
                 <th class="border-0 pb-3 text-center">Status</th>
-                <th class="border-0 pb-3 text-center" width="10%">Aksi</th>
+                
             </tr>
         </thead>
         <tbody>
@@ -53,11 +53,7 @@
                             </span>
                         <?php endif; ?>
                     </td>
-                    <td class="text-center">
-                        <a href="?halaman=hapus_peminjaman&id_transaksi=<?= $t['id_trasnsaksi']; ?>" class="btn btn-outline-danger btn-sm border-0 rounded-3 px-2 py-1" onclick="return confirm('Hapus riwayat peminjaman ini?')" title="Hapus Riwayat">
-                            <i class="bi bi-trash3"></i>
-                        </a>
-                    </td>
+                
                 </tr>
                 <?php 
                 } 
