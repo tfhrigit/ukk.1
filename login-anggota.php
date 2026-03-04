@@ -64,7 +64,7 @@ if (isset($_POST['login'])) {
                         <label class="form-label small fw-bold text-muted">USERNAME / NIS</label>
                         <div class="input-group">
                             <span class="input-group-text"><i class="bi bi-person"></i></span>
-                            <input type="text" name="username" class="form-control" placeholder="Masukkan username" required>
+                            <input type="text" name="username" class="form-control" placeholder="" required>
                         </div>
                     </div>
 
@@ -72,7 +72,7 @@ if (isset($_POST['login'])) {
                         <label class="form-label small fw-bold text-muted">PASSWORD</label>
                         <div class="input-group">
                             <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                            <input type="password" name="password" class="form-control" placeholder="Masukkan password" required>
+                            <input type="password" name="password" class="form-control" placeholder="" required>
                         </div>
                     </div>
 

@@ -55,27 +55,27 @@ if (isset($_POST['daftar'])) {
                 <form method="post">
                     <div class="mb-3">
                         <label class="form-label small fw-bold text-muted">NIS (Nomor Induk Siswa)</label>
-                        <input type="text" name="nis" class="form-control" placeholder="Masukkan NIS Anda" required>
+                        <input type="text" name="nis" class="form-control" placeholder="" required>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label small fw-bold text-muted">NAMA LENGKAP</label>
-                        <input type="text" name="nama" class="form-control" placeholder="Masukkan nama lengkap" required>
+                        <input type="text" name="nama" class="form-control" placeholder="" required>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label small fw-bold text-muted">KELAS</label>
-                        <input type="text" name="kelas" class="form-control" placeholder="Contoh: XII RPL 1" required>
+                        <input type="text" name="kelas" class="form-control" placeholder="" required>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label small fw-bold text-muted">USERNAME</label>
-                        <input type="text" name="username" class="form-control" placeholder="Pilih username" required>
+                        <input type="text" name="username" class="form-control" placeholder="" required>
                     </div>
 
                     <div class="mb-4">
                         <label class="form-label small fw-bold text-muted">PASSWORD</label>
-                        <input type="password" name="password" class="form-control" placeholder="Buat password" required>
+                        <input type="password" name="password" class="form-control" placeholder="" required>
                     </div>
 
                     <button type="submit" name="daftar" class="btn btn-register mb-4">Daftar Sekarang</button>
