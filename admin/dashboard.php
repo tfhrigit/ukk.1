@@ -141,14 +141,12 @@ if (empty($_SESSION['id_admin'])) {
     <?php
     $halaman = isset($_GET['halaman']) ? $_GET['halaman'] : "";
     ?>
-
     <div class="sidebar">
         <div class="sidebar-header">
             <img src="../asset/img/logo-smk.png" alt="Logo">
             <h6 class="fw-bold mb-0">Admin Panel</h6>
             <small class="text-muted">Perpustakaan Smk Karya Bhakti Brebes</small>
         </div>
-        
         <ul class="nav-menu">
             <li class="nav-item">
                 <a href="dashboard.php" class="nav-link <?= empty($halaman) ? 'active' : '' ?>">
@@ -175,7 +173,6 @@ if (empty($_SESSION['id_admin'])) {
                 </a>
             </li>
         </ul>
-
         <div class="sidebar-footer">
             <a href="logout.php" class="nav-link text-danger">
                 <i class="bi bi-box-arrow-right"></i>
@@ -183,7 +180,6 @@ if (empty($_SESSION['id_admin'])) {
             </a>
         </div>
     </div>
-
     <div class="main-content">
         <div class="header-content">
             <h5 class="fw-bold mb-0 text-dark">
@@ -202,7 +198,6 @@ if (empty($_SESSION['id_admin'])) {
                 </div>
             </div>
         </div>
-
         <div class="content-card shadow-sm">
             <?php
             if (file_exists($halaman.".php")) {
@@ -213,7 +208,6 @@ if (empty($_SESSION['id_admin'])) {
                 <p class="text-muted fs-5 mb-4" style="max-width: 600px; line-height: 1.7;">
                     Selamat datang di sistem manajemen perpustakaan digital. Pantau aktivitas, kelola literasi, dan berikan layanan terbaik untuk seluruh elemen sekolah.
                 </p>
-                
                 <div class="row g-4 mt-2">
                     <div class="col-md-4">
                         <div class="p-4 rounded-4 bg-light border-0 card h-100 shadow-sm">

@@ -1,15 +1,12 @@
 <h5 class="fw-bold mb-4">
     <i class="bi bi-plus-circle"></i> Tambah Transaksi Peminjaman
 </h5>
-
 <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="card shadow-sm">
             <div class="card-body">
-
                 <form method="post">
                     <?php include '../koneksi.php'; ?>
-
                     <div class="mb-3">
                         <label class="form-label fw-semibold">Pilih Anggota</label>
                         <select name="id_anggota" class="form-select" required>
@@ -21,7 +18,6 @@
                             <?php endwhile; ?>
                         </select>
                     </div>
-
                     <div class="mb-3">
                         <label class="form-label fw-semibold">Pilih Buku</label>
                         <select name="id_buku" class="form-select" required>
@@ -33,34 +29,27 @@
                             <?php endwhile; ?>
                         </select>
                     </div>
-
                     <div class="mb-3">
                         <label class="form-label fw-semibold">Tanggal Pinjam</label>
                         <input type="date" name="tgl_pinjam" class="form-control" value="<?= date('Y-m-d') ?>" required>
                     </div>
-
                     <div class="mb-3">
                         <label class="form-label fw-semibold">Tanggal Kembali</label>
                         <input type="date" name="tgl_kembali" class="form-control" value="<?= date('Y-m-d', strtotime('+7 days')) ?>" required>
                     </div>
-
                     <div class="d-flex justify-content-between">
                         <a href="?halaman=data_peminjaman" class="btn btn-secondary">
                             <i class="bi bi-arrow-left"></i> Kembali
                         </a>
-
                         <button type="submit" name="simpan" class="btn btn-success">
                             <i class="bi bi-save"></i> Simpan Transaksi
                         </button>
                     </div>
-
                 </form>
-
             </div>
         </div>
     </div>
 </div>
-
 <?php  
 if (isset($_POST['simpan'])) {
     $id_anggota = $_POST['id_anggota'];
@@ -70,7 +59,6 @@ if (isset($_POST['simpan'])) {
     $query = "INSERT INTO transaksi (id_anggota, id_buku, tgl_pinjam, tgl_kembali, status_transaksi) 
               VALUES ('$id_anggota', '$id_buku', '$tgl_pinjam', '$tgl_kembali', 'Peminjaman')";
     $simpan = mysqli_query($koneksi, $query);
-
     if ($simpan) {
         mysqli_query($koneksi, "UPDATE buku SET status='Tidak' WHERE id_buku='$id_buku'");
 

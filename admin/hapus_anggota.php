@@ -1,10 +1,8 @@
 <?php  
 include '../koneksi.php';
 $id = $_GET['id_anggota'];
-
 $query = "DELETE FROM anggota WHERE id_anggota = '$id'";
 $hapus = mysqli_query($koneksi, $query);
-
 if ($hapus) {
     echo "<script>
         alert('Data Anggota Berhasil Dihapus');

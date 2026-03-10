@@ -6,7 +6,6 @@
         <i class="bi bi-plus-lg me-1"></i> Tambah Buku
     </a>
 </div>
-
 <div class="table-responsive">
     <table class="table table-hover align-middle border-0">
         <thead>
@@ -24,7 +23,6 @@
             $no = 1;
             $query = "SELECT * FROM buku ORDER BY id_buku ASC";
             $data = mysqli_query($koneksi, $query);
-
             foreach ($data as $buku) {
             ?>
             <tr>
@@ -63,7 +61,6 @@
         </tbody>
     </table>
 </div>
-
 <style>
     .table thead th { font-weight: 700; letter-spacing: 0.5px; }
     .table tbody tr { transition: all 0.2s; border-bottom: 1px solid #f8f9fa; }
